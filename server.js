@@ -14,7 +14,9 @@ app.use(proxy("/songs", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com/
 app.use(proxy("/filterSongsRock", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com/'}));
 app.use(proxy("/filterSongsJazz", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com/'}));
 app.use(proxy("/filterSongsPop", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com/'}));
-app.use(proxy("/data", {target: 'http://friendscomponent.us-west-1.elasticbeanstalk.com/'}));
+app.use(proxy("/data", {target: 'http://friends-component-fec.us-west-1.elasticbeanstalk.com/'}));
+app.use(proxy("/song", {target: 'http://friends-component-fec.us-west-1.elasticbeanstalk.com/'}));
+
 
 
 
